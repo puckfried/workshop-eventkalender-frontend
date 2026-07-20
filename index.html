@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ein Event-Kalender als CSS-Übung mit TypeScript und Vite"
+    />
+    <title>KiezKultur – Events in Berlin</title>
+    <script type="module" crossorigin src="/assets/index-Csj_ThTx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-viHmwreI.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="#top">KiezKultur</a>
+
+        <nav class="main-nav" aria-label="Hauptnavigation">
+          <a href="#events">Events</a>
+          <a href="#events">Über uns</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <a class="ticket-link" href="#events">Tickets finden</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Berlin · 18.–24. August</p>
+          <h1>Deine Woche in der Stadt.</h1>
+          <p class="hero-text">
+            Konzerte, Workshops und kleine Momente, die deinen Kiez lebendig
+            machen.
+          </p>
+
+          <div class="hero-meta" aria-label="Übersicht">
+            <span>6 Events</span>
+            <span>4 Orte</span>
+            <span>Diese Woche</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-section container" id="events" aria-labelledby="events-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Entdecke</p>
+            <h2 id="events-heading">Diese Woche</h2>
+          </div>
+          <p>Such dir etwas aus und mach den Abend zu deinem.</p>
+        </div>
+
+        <div class="filter-chips" aria-label="Event-Kategorien">
+          <span class="filter-chip filter-chip--active">Alle Events</span>
+          <span class="filter-chip">Musik</span>
+          <span class="filter-chip">Kunst</span>
+          <span class="filter-chip">Community</span>
+        </div>
+
+        <div id="app" class="event-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="kontakt">
+      <div class="container">
+        <p>© 2026 KiezKultur · Dein Kalender für Berlin.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
